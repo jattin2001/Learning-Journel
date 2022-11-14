@@ -1,0 +1,316 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+    align-items: center;
+    display: none;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 0;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+header h2{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+header a{
+    color: black;
+    text-decoration: none;
+}
+
+header img{
+    width: 35px;
+    height: 35px;
+    padding: 0 1em;
+    cursor: pointer;
+}
+.nav-list{
+    display: flex; 
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-left: 1em;  
+    border-bottom: 2px solid;
+}
+
+.nav-list li{
+    list-style: none;
+}
+.nav-list a{
+    text-decoration: none;
+    margin-left: 0.8em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #090909;
+}
+
+.nav-list a:hover, .nav-list a:focus{
+    color: gray;
+}
+
+
+.heading{
+    background: url("/images/article-image-hero.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 12em 1em 1em 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading h1{
+    margin-top: 0.4em;
+    width: 92%;
+}
+
+.heading .date{
+    order: -2;
+    align-self: flex-start;
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.heading p:nth-of-type(1){
+    line-height: 24px;
+    margin-top: 0;
+    width: 88%;
+}
+
+
+.blog{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.blog img{
+    order: -2;
+    width: 100%;
+}
+
+.blog h2{
+    margin: 0.4em 0;
+}
+
+.blog .date{
+    order: -1;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+
+.blog p:nth-of-type(1){
+    margin-top: 0;
+    color: #505050;
+    line-height: 20px;
+}
+
+
+.view-more-btn{
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 3em;
+    cursor: pointer;
+    width: 100%;
+    border: 0;
+    background: transparent;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background: #202020;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em 0;
+}
+
+footer h3{    
+    color: #ECECEC;
+    margin-bottom: 0;  
+    font-size: 0.9rem;
+}
+
+footer p{
+    color: #D7D7D7;
+    margin-top: 0.2em;
+    font-size: 0.8rem;
+}
+
+
+
+
+.about-me{
+    padding: 1.5em;
+}
+
+
+.about-info{
+    display: flex;
+    flex-direction: column; /* new line */
+    /* align-items: center; */
+    justify-content: center;
+}
+.about-info img{
+    width: 120px;
+    height: 125px;
+    border-radius: 50%;
+    margin-right: 1em; 
+}
+
+
+.about-me h1{
+    width: 100%;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.about-me p:nth-of-type(1){
+    margin-top: 0.4rem;
+    margin-bottom: 1.4em;
+}
+
+
+.about-me .journey-queries{
+    padding: 0;
+    margin-top: 1em;
+}
+
+.journey-queries h4{
+    margin: 0 0 0.8em 0;
+}
+
+
+
+.recent-posts h3{
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.my-journel{
+    display: flex;
+    flex-direction: column;
+    padding: 0.2em 1em;
+}
+
+.my-journel img{
+    object-fit: cover;
+}
+.my-journel .date{
+    order: -2;
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
+
+.my-journel h1{
+    margin-top: 0.3em;
+    margin-bottom: 0;
+}
+
+.my-journel p:nth-of-type(1){
+    line-height: 24px;
+}
+
+@media (min-width:800px){    
+    html{
+        font-size: 20px;
+    }
+    header{
+        position: relative;
+    }
+    header #hamburger-icon{
+        display: none;
+    }
+    nav{
+        padding: 0.3em 2em;
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40%;
+    }
+    .nav-list li{
+        margin-left: 2em;
+    }
+    
+    .nav-list{
+        flex-direction: row;
+        border: 0;
+    }
+    
+    
+    
+    .heading{ 
+        background-position: 0vh 0vh;
+        box-sizing: border-box;
+    }
+    
+    .heading h1{
+        margin-bottom: 0;
+        font-size: 2.5rem;
+    }
+    
+    .heading p:nth-of-type(1){
+        width: 80%;
+    }
+    .blogs{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2em;
+        justify-content: space-between;
+    }
+    
+    .blog{
+        width: 28%;
+    }
+
+
+    .about-info{
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .about-me .journey-queries{
+        padding: 0 4em;
+    }
+    .my-journel img{
+        height: 488px;
+        margin: 1em auto;
+        width: 95%;
+        object-fit: cover;
+    }
+    .my-journel .journey-heading{
+        padding: 0 4em;
+    }
+}
+
+
+
+.flex{
+    display: flex;
+}
+
+.hide{
+    display: none;
+}
